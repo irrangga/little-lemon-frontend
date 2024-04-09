@@ -1,12 +1,12 @@
-import LogoIcon from "../images/Logo.svg"
+import HeaderLogo from "./HeaderLogo"
 import Nav from "./Nav"
 
 const Header = () => {
   return (
-    <>
-      <img src={LogoIcon} alt="Little Lemon Logo" />
+    <div className="Header">
+      <HeaderLogo />
       <Nav />
-    </>
+    </div>
   )
 }
 

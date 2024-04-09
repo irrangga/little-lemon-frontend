@@ -1,12 +1,14 @@
-import LogoIcon from "../images/Logo Vertical.png"
+import FooterLogo from "./FooterLogo"
 import Nav from "./Nav"
 
 const Footer = () => {
   return (
-    <>
-      <img src={LogoIcon} alt="Little Lemon Logo" />
-      <Nav />
-    </>
+    <div className="FooterBackground">
+      <div className="Footer">
+        <FooterLogo />
+        <Nav />
+      </div>
+    </div>
   )
 }
 

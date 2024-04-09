@@ -1,27 +1,64 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
+  max-width: 900px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  height: 6rem;
+}
+
+.HeaderLogo {
+  flex: 1 1 auto;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+}
+
+.HeaderLogo img {
+  width: 200px;
+}
+
+.FooterBackground {
+  background-color: #F4CE14;
+}
+
+.Footer {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  height: 15rem;
+}
+
+.FooterLogo {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: left;
+}
+
+.FooterLogo img {
+  width: 100px;
+}
+
+.Nav {
+  list-style: none;
+  padding: 0;
+}
+
+.Nav li {
+  margin: auto 0;
+}
+
+.Header .Nav {
+  flex: 3 1 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer .Nav {
+  flex: 1 1 auto;
+  margin: auto;
+  text-align: right;
+  line-height: 1.5rem;
 }
 
 .App-link {
@@ -32,6 +69,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
