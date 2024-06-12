@@ -1,6 +1,9 @@
-.Header {
+.Header, .Footer, .HomeAbout {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.Header {
   display: flex;
   height: 6rem;
 }
@@ -21,8 +24,6 @@
 }
 
 .Footer {
-  max-width: 900px;
-  margin: 0 auto;
   display: flex;
   height: 15rem;
 }
@@ -44,7 +45,7 @@
   padding: 0;
 }
 
-.Nav li {
+.Nav a {
   margin: auto 0;
 }
 
@@ -57,8 +58,65 @@
 .Footer .Nav {
   flex: 1 1 auto;
   margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
   text-align: right;
   line-height: 1.5rem;
+}
+
+.HomeAboutBox {
+  height: 30rem;
+}
+
+.HomeAboutBackground {
+  height: 75%;
+  background-color: #495E57;
+}
+
+.HomeAbout {
+  display: flex;
+  padding: 2.5rem 0;
+}
+
+.HomeAboutDescription {
+  flex: 3 1 auto;
+}
+
+.HomeAboutDescription h1 {
+  color: #F4CE14;
+  font-size: 3rem;
+  line-height: 0;
+}
+
+.HomeAboutDescription h2 {
+  color: white;
+}
+
+.HomeAboutDescription p {
+  color: white;
+  overflow-wrap: break-word;
+  padding-right: 2rem;
+  width: 20rem;
+  line-height: 150%;
+}
+
+.HomeAboutImage {
+  flex: 1 1 auto;
+}
+
+.HomeAboutImage img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  background-color: #F4CE14;
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 1rem;
 }
 
 .App-link {
