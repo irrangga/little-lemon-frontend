@@ -1,11 +1,11 @@
 import About from "./About/About.js"
-import Specials from "./Specials"
+import Specials from "./Specials/Specials.js"
 
 const Home = () => {
   return (
     <main>
       <About />
-      {/* <Specials /> */}
+      <Specials />
     </main>
   )
 }
